@@ -1,0 +1,20 @@
+[project]
+name = "team-project"
+version = "0.1.0"
+description = "Global Retail Intelligence Engine — Advanced RAG system"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain",
+    "langchain-chroma",
+    "langchain-community",
+    "langchain-huggingface",
+    "chromadb",
+    "sentence-transformers",
+    "gradio",
+    "rank-bm25",
+    "pandas",
+    "openai",
+    "python-dotenv",
+    "ipykernel>=7.2.0",
+]

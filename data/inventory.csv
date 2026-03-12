@@ -1,0 +1,11 @@
+Product_ID,Country,Category,Item_Name,Price_Local,Currency,Technical_Specs,Internal_Notes
+GH-K-001,Ghana,Kitchen,EcoVolt Smart Kettle,850,GHS,"1.7L capacity; 220V-240V; Rapid boil feature; Auto shut-off; BPA-free; Stainless steel interior","[OFF-LIMITS] Supplier: Kofi Mensah; Margin: 22%; Stock: Accra Warehouse."
+DE-L-441,Germany,Electronics,Steinberg ProBook X1,1299,EUR,"QWERTZ Layout; Intel i7; 32GB RAM; 1TB SSD; 15.6 inch FHD IPS display; USB-C; Thunderbolt 4","[CONFIDENTIAL] Lead tech: Hans Schmidt; Procurement: Berlin Office."
+ZA-S-900,South Africa,Energy,Solar Inverter TS-9000-X,15000,ZAR,"5kW capacity; Pure Sine Wave; IP65 Rated; MPPT charge controller; LCD display; Wi-Fi monitoring","[SECURITY] Fragile unit; Supplier: J. Botha; Do not share wholesale cost."
+UK-W-202,United Kingdom,Policy,Warranty Master Doc,0,GBP,"Standard 1-year coverage. EU/UK: 2-year mandatory warranty law. Update every 6 months to match trade laws.","[LEGAL] Update every 6 months to match trade laws."
+GH-M-005,Ghana,Kitchen,Turbo-Blend 500,450,GHS,"500W motor; Stainless blades; Pulse mode; 1.5L glass jar; 3-speed control; Dishwasher-safe parts","[OFF-LIMITS] Margin: 15%; High return rate in Kumasi branch."
+NL-L-5042,Netherlands,Electronics,AuraScreen Monitor 27,549,EUR,"27 inch 4K UHD; IPS panel; HDR10; USB-C hub; 99% sRGB; VESA mount; 60Hz refresh rate","[CONFIDENTIAL] Supplier: Van der Berg Electronics; Margin: 18%."
+NL-W-301,Netherlands,Policy,Warranty Master Doc,0,EUR,"Standard 1-year coverage. Netherlands: 2-year mandatory warranty under EU consumer law. Electronics include extended support options.","[LEGAL] Review bi-annually for EU directive compliance."
+KE-K-110,Kenya,Kitchen,Smart Kettle Pro,2400,KES,"1.5L capacity; 220V; Temperature control; Keep-warm function; LED display; 360-degree base","[OFF-LIMITS] Supplier: Wanjiku Traders; Margin: 20%; Nairobi depot stock."
+IN-E-220,India,Electronics,ByteForce Laptop 15,54999,INR,"Intel i5; 16GB RAM; 512GB SSD; 15.6 inch FHD; Windows 11; Backlit keyboard; Fingerprint reader","[CONFIDENTIAL] Supplier: Raj Electronics; Margin: 12%; Mumbai warehouse."
+GH-S-800,Ghana,Energy,Solar Inverter GH-3000,8500,GHS,"3kW capacity; Pure Sine Wave; IP65 Rated; Built-in MPPT; LCD panel; Mobile app monitoring","[SECURITY] Supplier: Kwame Solar Ltd; Margin: 25%; Accra facility."
