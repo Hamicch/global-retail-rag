@@ -17,4 +17,6 @@ dependencies = [
     "openai",
     "python-dotenv",
     "ipykernel>=7.2.0",
+    "transformers",
+    "torch",
 ]

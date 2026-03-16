@@ -1,0 +1,45 @@
+GlobalCart RAG - Architecture Flow
+==========================================================
+
+OFFLINE (ingestion, run once):
+  CSV -> Sanitize (strip Internal_Notes) -> Split -> Embed -> ChromaDB
+
+ONLINE (per query):
+  User question
+       |
+       v
+  +------------------+
+  | Input Guardrail  |  Prompt-Guard-86M (JAILBREAK) + regex (system prompt / debugging mode)
+  +--------+---------+
+       | pass
+       v
+  Resolve country (dropdown or from question text)
+       |
+       v
+  +---------------------------+
+  | Hybrid Retrieval          |  Chroma (vector) + BM25, metadata filter by country, k=5
+  +--------+------------------+
+       |
+       v
+  Format context + region note -> Build user prompt
+       |
+       v
+  +------------------+
+  | LLM              |  OpenRouter (Gemini 2.0 Flash), SYSTEM_PROMPT + user prompt, stream
+  +--------+---------+
+       |
+       v
+  +------------------+
+  | Output Guardrail |  Regex redact: supplier, margin, [CONFIDENTIAL], system-prompt leaks
+  +--------+---------+
+       |
+       v
+  Streamed response -> Gradio UI
+
+Full pipeline (horizontal):
+  CSV -> Sanitize -> Split -> Embed -> ChromaDB -> [Query: Input Guard -> Country -> Hybrid Search -> LLM -> Output Guard -> Gradio UI]
+
+Guardrails:
+  * Input:   Block jailbreak / prompt-extraction (model + regex) before retrieval or LLM.
+  * Retrieval: Internal_Notes never in index; country filter on hybrid search.
+  * Output:  Redact leaked supplier, margins, internal tags, system instructions from LLM output.

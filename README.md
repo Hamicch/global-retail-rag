@@ -16,6 +16,11 @@ uv sync
 
 # Add your OpenRouter API key
 echo 'OPENROUTER_API_KEY=sk-or-v1-...' > .env
+
+# Input guardrails use meta-llama/Prompt-Guard-86M (gated). Accept the Llama 3.1 license at
+# https://huggingface.co/meta-llama/Prompt-Guard-86M then authenticate:
+#   huggingface-cli login
+# or add HF_TOKEN=... to .env
 ```
 
 ## Run
